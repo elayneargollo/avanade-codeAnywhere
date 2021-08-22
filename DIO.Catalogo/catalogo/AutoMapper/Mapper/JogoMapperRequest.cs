@@ -1,0 +1,20 @@
+﻿using AutoMapper;
+using catalogo.Entity;
+using catalogo.InputModel;
+using catalogo.ViewModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace catalogo.AutoMapper.Mapper
+{
+    public static class JogoMapperRequest
+    {
+        public static void Map(Profile profile)
+        {
+            if (profile != null)
+                profile.CreateMap<Jogo, JogoViewModel>();
+        }
+    }
+}
